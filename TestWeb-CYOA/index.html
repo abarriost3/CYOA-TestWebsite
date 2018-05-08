@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="webTemplate.css">
+<link rel="stylesheet" type="text/css" href="indexStyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="loadIndexContent.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Choose your own adventure!</h1>
+	</header>
+	
+	<nav id="menuBar">
+		<ul class="horizontalMenuBar">
+			<div class="menuBarLeftElements">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tags.html">Story Tags</a></li>
+				<li><a href="default.asp">Write</a></li>
+			    <li><a href="news.asp">Search</a></li>
+			    <li><a href="contact.asp">Authors</a></li>
+			    <li><a href="about.asp">Help</a></li>
+			</div>
+		    <div class="menuBarRightElements">
+		    	<li><a id="loginButton">Login</a></li>
+		    	<li><a id="registerButton">Register</a></li>
+		    </div>
+		</ul>
+	</nav>
+	
+	<div id="modalLogin">
+		<div id="loginBox">
+			<h1>Login</h1>
+			<form method="post">
+				<div id="upperLoginBox">
+					<label for="username">Username:</label>
+					<input type="text" id="loginUsername" name="username">
+					<label for="password">Password:</label>
+					<input type="password" id="loginPassword" name="password">
+				</div>
+				
+				<div id="lowerLoginBox">
+					<input type="checkbox"><label for="checkbox">Remember login</label>
+					<input type="submit" value="Login">
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div id="modalRegister">
+		<div id="loginBox">
+			<h1>Login</h1>
+			<form method="post">
+				<div id="upperLoginBox">
+					<label for="username">Username:</label>
+					<input type="text" id="registerUsername" name="username">
+					<label for="password">Password:</label>
+					<input type="password" id="registerPassword" name="password">
+				</div>
+				
+				<div id="lowerLoginBox">
+					<input type="checkbox"><label for="checkbox">Remember login</label>
+					<input type="submit" value="Login">
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	
+	<div id="main">
+		<article id="topStories">
+			<h1 class="centerHorizontallyText articleHeader">Top 5 Stories</h1>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+		</article>
+		
+		<article id="trendingStories">
+			<h1 class="centerHorizontallyText articleHeader">5 Trending Stories</h1>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+		</article>
+		<article id="trendingStories">
+			<h1 class="centerHorizontallyText articleHeader">5 Trending Stories</h1>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<img class="thumbnailImage centerVertically" src="Images/sampleStoryImage.jpg"></img>
+				<a class="storyLink" href="default.asp"></a>
+				
+				<div class="storyBox">
+					<div class="storyNameBox">
+						<h2 class="storyTitle">Harry Potter and The Philosopher's Stone</h2>
+						<h3 class="storyAuthor">J.K. Rowling</h3>
+						<div class="rating">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>5.0</p>
+					</div>
+					<div class="storyTagsBox">
+						<a class="tag" href="default.asp">Fantasy</a>
+						<a class="tag" href="default.asp">Long Series</a>
+						<a class="tag" href="default.asp">Magic</a>
+						<a class="tag" href="default.asp">Male Lead</a>
+						<a class="tag" href="default.asp">Popular</a>
+						<a class="tag" href="default.asp">Real World</a>
+					</div>	
+				</div>
+			</section>
+		</article>
+	</div>
+	
+	<footer>
+		<p>Website Made by: <span>Antoni Barrios Toscano</span></p>
+		<p class="lastElement">Email: <span>toni100e@hotmail.com</span></p>
+	</footer>
+	
+	<script> /*requestAJAX();*/ </script>
+	<script type="text/javascript" src="modalLogin.js"></script>
+	<script type="text/javascript" src="modalRegister.js"></script>
+</body>
+</html>

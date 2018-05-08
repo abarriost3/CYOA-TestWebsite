@@ -1,0 +1,149 @@
+
+
+article{
+	/*background: #0000005A;*/
+	background: 
+	    linear-gradient(
+	      rgba(0, 0, 0, 0.8),
+	      rgba(0, 0, 0, 0.5)
+	    );
+
+	
+	width: 588px;
+	height: 793px;
+	margin-right: 20px;
+	margin-left: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	border-radius: 10px;
+}
+
+section{
+	height: 140px;
+	display: inline-flex;
+	background: #ccc;
+	border-color: #a6a6a6;
+	border-style: solid;
+	margin-bottom: 5px;
+}
+
+section:hover{
+	background: 
+	    linear-gradient(
+	      rgba(204, 204, 204, 0.8),
+	      rgba(204, 204, 204, 0.5)
+	    );
+	border: none;
+	padding: 5px 0px 0px 5px;
+}
+
+/************************************/
+/* Specific  ID                     */
+/************************************/
+
+
+
+
+
+
+
+#topStories{
+	position: relative;
+
+}
+
+#trendingStories{
+	position: relative;
+}
+
+/****************************************/
+/* Specific  Classes                    */
+/****************************************/
+
+
+
+
+
+
+
+.thumbnailBox{
+	float: left;
+}
+.thumbnailImage{
+	float: left;
+	position: relative;
+	height: 75px;
+    width: 50px; 
+    margin: 0;
+    margin-left: 20px;
+    
+}
+
+.storyBox{
+	display: inline-flex;
+	margin-left: 20px;
+}
+
+.storyNameBox{
+	width: 250px;
+	margin-right: 1px;
+}
+
+.storyTagsBox{
+	width: 200px;
+	margin-top: 5px;
+	margin-right: 1px;
+}
+
+.storyTitle{
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 450;
+}
+
+.storyAuthor{
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+.storyLink{
+	position: absolute;
+	z-index: 5;
+	display: unset;
+	height: 135px;
+	width: 330px;
+}
+
+.storyLink:hover ~ .storyBox .storyNameBox h2{
+	text-decoration: underline;
+}
+.storyLink:hover ~ .storyBox .storyNameBox h3{
+	text-decoration: underline;
+}
+
+
+
+.articleHeader{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+	font-family: 'Segoe UI', 'Open Sans', sans-serif;
+	color: white
+}
+
+
+.tag{
+	display: inline-block;
+	padding: 2px 2px 2px 2px;
+	border-radius: 7px;
+	margin-top: 2px;
+	background: #ddd;	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11pt;
+	color: black;
+	text-decoration: none;
+}
+
+
+
+
